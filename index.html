@@ -34,49 +34,26 @@
             filter: drop-shadow(0 0 10px rgba(255,255,255,0.5));
         }
 
-        .project-card {
-            transition: transform 0.3s;
-            background: lightblue !important;
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
         }
-
-        .project-card:hover {
-            transform: translateY(-10px);
-        }
-
-        .price-card {
+        .container {
+            max-width: 600px;
             background: white;
-            border-radius: 15px;
-            transition: all 0.3s;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        li {
+            margin: 10px 0;
         }
 
-        .price-card:hover {
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-
-        .project-card-aws {
-            float: right;
-            transition: transform 0.3s;
-            background: lightblue !important;
-        }
-
-        .project-card-aws:hover {
-            transform: translateY(-10px);
-        }
-
-        .price-card-aws {
-            background: white;
-            border-radius: 15px;
-            transition: all 0.3s;
-        }
-
-        .price-card-aws:hover {
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-
-        .contact-section {
-            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
-            color: white;
-        }
     </style>
 </head>
 <body>
@@ -123,26 +100,13 @@
     <section id="projects" class="py-5 bg-light">
         <div class="container text-center animate__animated animate__fadeInUp">
             <h2 class="text-center mb-5">Our Expertise</h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card project-card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Big Data Solutions</h5>
-                            <p class="card-text">Databricks, Hadoop, Spark, Big Data Pipelines and more...</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card project-card-aws h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Cloud Solutions</h5>
-                            <p class="card-text">ETL ...</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Add similar cards for other services -->
-            </div>
+            <ul>
+                <li>Responsive Design</li>
+                <li>Easy Navigation</li>
+                <li>Fast Loading Speed</li>
+                <li>SEO Optimized</li>
+                <li>User-Friendly Interface</li>
+            </ul>
         </div>
     </section>
 
