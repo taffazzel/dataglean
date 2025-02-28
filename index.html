@@ -53,6 +53,26 @@
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
         }
 
+        .project-card-aws {
+            float: right;
+            transition: transform 0.3s;
+            background: lightblue !important;
+        }
+
+        .project-card-aws:hover {
+            transform: translateY(-10px);
+        }
+
+        .price-card-aws {
+            background: white;
+            border-radius: 15px;
+            transition: all 0.3s;
+        }
+
+        .price-card-aws:hover {
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
         .contact-section {
             background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
             color: white;
@@ -110,10 +130,14 @@
                             <h5 class="card-title">Big Data Solutions</h5>
                             <p class="card-text">Databricks, Hadoop, Spark, Big Data Pipelines and more...</p>
                         </div>
-                        <div class="card-cloud">
-                            <h5 class="card-title">~AWS cloud Solutions</h5>
-                            <p class="card-text"> AWS Data Engineer</p>
-                            <p class="card-text"> Big Data pipelines on Cloud</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card project-card-aws h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Cloud Solutions</h5>
+                            <p class="card-text">ETL ...</p>
                         </div>
                     </div>
                 </div>
