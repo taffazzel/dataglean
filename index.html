@@ -77,6 +77,24 @@
             background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
             color: white;
         }
+
+        card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 200px;
+            text-align: left;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin: 0;
+        }
+        li {
+            margin: 10px 0;
+        }
+
     </style>
 </head>
 <body>
@@ -124,22 +142,23 @@
         <div class="container text-center animate__animated animate__fadeInUp">
             <h2 class="text-center mb-5">Our Expertise</h2>
             <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card project-card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Big Data Solutions</h5>
-                            <p class="card-text">Databricks, Hadoop, Spark, Big Data Pipelines and more...</p>
-                        </div>
-                    </div>
+                <div class="card">
+                    <h3>Left Card</h3>
+                    <ul>
+                        <li>Feature 1</li>
+                        <li>Feature 2</li>
+                        <li>Feature 3</li>
+                        <li>Feature 4</li>
+                    </ul>
                 </div>
-
-                <div class="col-md-4">
-                    <div class="card project-card-aws h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Cloud Solutions</h5>
-                            <p class="card-text">ETL ...</p>
-                        </div>
-                    </div>
+                <div class="card">
+                    <h3>Center Card</h3>
+                    <ul>
+                        <li>Feature 1</li>
+                        <li>Feature 2</li>
+                        <li>Feature 3</li>
+                        <li>Feature 4</li>
+                    </ul>
                 </div>
                 <!-- Add similar cards for other services -->
             </div>
