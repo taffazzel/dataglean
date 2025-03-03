@@ -327,11 +327,17 @@
                 </div>
                 <div class="col-md-6">
                     <h3>Send us a message</h3>
-                    <form action="{{ url_for('submit_form') }}" method="post">
-                        <input type="text" class="form-control mb-3" name="name" placeholder="Name" required>
-                        <input type="email" class="form-control mb-3" name="email" placeholder="Email" required>
-                        <textarea class="form-control mb-3" name="message" rows="5" placeholder="Message" required></textarea>
-                        <button type="submit" class="btn btn-light">Send Message</button>
+                    <form action="https://formspree.io/f/your_formspree_id" method="POST">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required><br><br>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required><br><br>
+
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+                        <input type="submit" value="Send">
                     </form>
                 </div>
             </div>
