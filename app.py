@@ -1,10 +1,11 @@
+import secrets
 from flask import Flask, request, redirect, url_for, render_template
 from flask_wtf import FlaskForm
 from wtforms import StringField, TextAreaField, SubmitField
 from wtforms.validators import DataRequired, Email
 
 app = Flask(__name__)
-app.secret_key = 'your_secret_key'
+app.secret_key = secrets.token_hex(16)  # Generate a random secret key
 
 class ContactForm(FlaskForm):
     name = StringField('Name', validators=[DataRequired()])
@@ -12,7 +13,7 @@ class ContactForm(FlaskForm):
     message = TextAreaField('Message', validators=[DataRequired()])
     submit = SubmitField('Send Message')
 
-@app.route('/submit_form', methods=['POST'])
+@app.route('/submit_form', methods=['GET', 'POST'])
 def submit_form():
     form = ContactForm()
     if form.validate_on_submit():
