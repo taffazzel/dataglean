@@ -326,11 +326,11 @@
                     </address>
                 </div>
                 <div class="col-md-6">
-                    <form>
-                        <input type="text" class="form-control mb-3" placeholder="Name">
-                        <input type="email" class="form-control mb-3" placeholder="Email">
-                        <textarea class="form-control mb-3" rows="5"></textarea>
-                        <button class="btn btn-light">Send Message</button>
+                    <form action="mailto:tafaz_hossain@yahoo.com" method="post" enctype="text/plain">
+                        <input type="text" class="form-control mb-3" name="name" placeholder="Name" required>
+                        <input type="email" class="form-control mb-3" name="email" placeholder="Email" required>
+                        <textarea class="form-control mb-3" name="message" rows="5" placeholder="Message" required></textarea>
+                        <button type="submit" class="btn btn-light">Send Message</button>
                     </form>
                 </div>
             </div>
